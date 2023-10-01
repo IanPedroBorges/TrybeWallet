@@ -209,6 +209,12 @@ header > p {
   color: #ffffff;
 }
 
+.mainFormInputs > form > button:hover {
+  background: #ffffff;
+  color: #2fc18c;
+  cursor: pointer;
+}
+
 /* Wallet Form ↑ */
 
 .mainInfo {
@@ -297,6 +303,11 @@ tbody button {
   cursor: pointer;
   margin: 0 3px;
   border: none;
+}
+
+tbody button:hover {
+  cursor: pointer;
+  transform: scale(1.2)
 }
 
 tbody button > img {
