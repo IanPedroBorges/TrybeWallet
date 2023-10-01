@@ -107,6 +107,7 @@ main {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 10%;
 }
@@ -209,3 +210,97 @@ header > p {
 }
 
 /* Wallet Form ↑ */
+
+.mainInfo {
+  width: 90%;
+  min-height: 60vh;
+  max-height: 100%;
+  background: #003be5;
+  border-radius: 10px;
+  box-shadow: -4px 9px 13px 0px #036b524d;
+  margin: 0 auto;
+  margin-top: 17vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.mainInfo::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.mainInfo::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+.mainInfo::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+.mainInfo > div {
+  margin: 0 auto;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+thead > tr > th {
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  font-family: Epilogue;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 1rem;
+}
+
+thead > tr > th:last-child {
+  border-right: none;
+}
+
+tbody {
+  font-family: Epilogue;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: -4px 9px 13px 0px #036B524D;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2fc18c;
+}
+
+tbody > tr > td {
+  border-bottom: 1px solid #ffffff;
+  padding: 1rem;
+}
+
+tbody button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0 3px;
+  border: none;
+}
+
+tbody button > img {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}

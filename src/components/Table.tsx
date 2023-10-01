@@ -2,6 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Expense, RootProp } from '../redux/types/TypesRedux';
 import { TableActionDelete, TableActionInitialEdit } from '../redux/actions';
 
+import edit from '../imgs/Editar.svg';
+import del from '../imgs/Excluir.svg';
+
 function Table() {
   const dispatch = useDispatch();
   const expense = useSelector((state: RootProp) => state.wallet.expenses);
@@ -45,17 +48,17 @@ function Table() {
               </td>
               <td>Real</td>
               <td>
+              <button
+                  data-testid="edit-btn"
+                  onClick={ () => handleEditClick(el.id) }
+                >
+                  <img src={ edit } alt="" />
+                </button>
                 <button
                   data-testid="delete-btn"
                   onClick={ () => handleClickDelete(Number(el.id)) }
                 >
-                  Excluir
-                </button>
-                <button
-                  data-testid="edit-btn"
-                  onClick={ () => handleEditClick(el.id) }
-                >
-                  Editar
+                  <img src={ del } alt="" />
                 </button>
               </td>
             </tr>
