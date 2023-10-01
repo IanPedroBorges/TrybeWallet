@@ -67,7 +67,7 @@ function WalletForm() {
     setInputWalletForm(initialState);
   };
   return (
-    <div>
+    <div className='mainFormInputs'>
       {editor ? (
         <form onSubmit={ handleFormEdit }>
           <div>
